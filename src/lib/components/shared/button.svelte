@@ -56,6 +56,6 @@
     @apply bg-accent text-accent-foreground;
   }
   .glass {
-    @apply bg-primary/70 backdrop-blur text-primary-foreground hover:shadow-none;
+    @apply bg-primary/70 backdrop-blur text-primary-foreground;
   }
 </style>

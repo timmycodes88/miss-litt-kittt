@@ -48,35 +48,94 @@
   />
   <Glow />
   <div
-    class="typer page mx-auto h-full flex flex-col gap-6 md:gap-10 items-center justify-center"
+    class="typer page mx-auto h-full flex flex-col md:flex-row gap-6 items-center justify-center md:justify-around"
   >
-    <Typewriter mode="loop" interval={120}>
-      <h2>Master...</h2>
-      <h2>SvelteKit</h2>
-      <h2>SupaBase</h2>
-      <h2>LiveKit</h2>
-      <h2>Tailwind</h2>
-      <h2>TypeScript</h2>
-      <h2>All-in-one Kit</h2>
-      <h2>Welcome to...</h2>
-      <h2>Miss Litt Kittt</h2>
-    </Typewriter>
-    <Card let:C>
-      <C.Header>BrightSide Developer's Latest Creation!</C.Header>
-      <C.Body
-        ><p class="text-center">
-          Miss Litt Kittt is the Ultimate Tech Stack to Develop High Quality
-          Social Applications at Rapid Speeds.
-        </p>
-      </C.Body>
-    </Card>
-    <div class="hover:scale-105 transition-transform">
+    <div class="mx-auto flex flex-col gap-10 md:w-[32rem] md:m-0">
+      <div class="w-fit mx-auto">
+        <Typewriter mode="loop" interval={120}>
+          <h2>Master...</h2>
+          <h2>SvelteKit</h2>
+          <h2>SupaBase</h2>
+          <h2>LiveKit</h2>
+          <h2>Tailwind</h2>
+          <h2>TypeScript</h2>
+          <h2>All-in-one Kit</h2>
+          <h2>Welcome to...</h2>
+          <h2>Miss Litt Kittt</h2>
+        </Typewriter>
+      </div>
+      <div class="hidden md:flex mx-auto flex-col">
+        <ul>
+          <li class="text-lg">
+            Uses <span class="font-bold">SvelteKit</span> as app
+            <span class="underline">frame-work</span>.
+          </li>
+          <li class="text-lg">
+            <span class="font-bold">SupaBase</span> for
+            <span class="underline">authentication</span>
+            and <span class="underline">database</span>.
+          </li>
+          <li class="text-lg">
+            <span class="font-bold">LiveKit</span> for realtime
+            <span class="underline">text</span>,
+            <span class="underline">audio</span> and
+            <span class="underline">video</span> communication.
+          </li>
+          <li class="text-lg">
+            <span class="font-bold">Tailwind</span> for
+            <span class="underline">styling</span>.
+          </li>
+          <li class="text-lg">
+            And <span class="font-bold">TypeScript</span> for
+            <span class="underline">type-safety</span>.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-6 md:gap-10 items-center justify-center">
+      <Card className="max-w-[25rem]" let:C>
+        <C.Header>BrightSide Developer's Latest Creation!</C.Header>
+        <C.Body
+          ><p class="text-center">
+            Miss Litt Kittt is the Ultimate Tech Stack to Develop High Quality
+            Social Applications at Rapid Speeds.
+          </p>
+        </C.Body>
+      </Card>
       <Button
         className="!rounded-full"
         variant="glass"
         size="xl"
         href="/?sign-up">Join Now!</Button
       >
+    </div>
+    <div class="text-center flex md:hidden mx-auto flex-col">
+      <ul>
+        <li class="text-lg">
+          Uses <span class="font-bold">SvelteKit</span> as app
+          <span class="underline">frame-work</span>.
+        </li>
+        <li class="text-lg">
+          <span class="font-bold">SupaBase</span> for
+          <span class="underline">authentication</span>
+          and <span class="underline">database</span>.
+        </li>
+        <li class="text-lg">
+          <span class="font-bold">LiveKit</span> for realtime
+          <span class="underline">text</span>,
+          <span class="underline">audio</span> and
+          <span class="underline">video</span> communication.
+        </li>
+        <li class="text-lg">
+          <span class="font-bold">Tailwind</span> for
+          <span class="underline">styling</span>.
+        </li>
+        <li class="text-lg">
+          And <span class="font-bold">TypeScript</span> for
+          <span class="underline">type-safety</span>.
+        </li>
+      </ul>
     </div>
   </div>
 {/if}

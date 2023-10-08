@@ -2,7 +2,7 @@
   import CardBody from './card/card-body.svelte'
   import CardFooter from './card/card-footer.svelte'
   import CardHeader from './card/card-header.svelte'
-
+  export let className = ''
   let C = {
     Header: CardHeader,
     Body: CardBody,
@@ -10,7 +10,7 @@
   }
 </script>
 
-<div>
+<div class={className}>
   <slot {C} />
 </div>
 
